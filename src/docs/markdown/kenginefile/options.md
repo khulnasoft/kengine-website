@@ -164,7 +164,7 @@ Possible options are (click on each option to jump to its documentation):
 
 ##### `debug`
 
-Enables debug mode, which sets the log level to `DEBUG` for the [default logger](#log). This reveals more details that can be useful when troubleshooting (and is very verbose in production). We ask that you enable this before asking for help on the [community forums](https://kengine.community). For example, at the top of your Kenginefile, if you have no other global options:
+Enables debug mode, which sets the log level to `DEBUG` for the [default logger](#log). This reveals more details that can be useful when troubleshooting (and is very verbose in production). We ask that you enable this before asking for help on the [community forums](https://kengine.khulnasoft.community). For example, at the top of your Kenginefile, if you have no other global options:
 
 ```kengine
 {

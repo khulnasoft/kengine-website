@@ -101,7 +101,7 @@ Keep in mind that Let's Encrypt may send you emails about your certificate neari
 
 -   **key_type** <span id="key_type"/> is the type of key to use when generating CSRs. Only set this if you have a specific requirement.
 
--   **dns** <span id="dns"/> enables the [DNS challenge](/docs/automatic-https#dns-challenge) using the specified provider plugin, which must be plugged in from one of the [`kengine-dns` <img src="/old/resources/images/external-link.svg" class="external-link">](https://github.com/kengine-dns) repositories. Each provider plugin may have their own syntax following their name; refer to their docs for details. Maintaining support for each DNS provider is a community effort. [Learn how to enable the DNS challenge for your provider at our wiki.](https://kengine.community/t/how-to-use-dns-provider-modules-in-kengine-2/8148)
+-   **dns** <span id="dns"/> enables the [DNS challenge](/docs/automatic-https#dns-challenge) using the specified provider plugin, which must be plugged in from one of the [`kengine-dns` <img src="/old/resources/images/external-link.svg" class="external-link">](https://github.com/kengine-dns) repositories. Each provider plugin may have their own syntax following their name; refer to their docs for details. Maintaining support for each DNS provider is a community effort. [Learn how to enable the DNS challenge for your provider at our wiki.](https://kengine.khulnasoft.community/t/how-to-use-dns-provider-modules-in-kengine-2/8148)
 
 -   **propagation_timeout** <span id="propagation_timeout"/> is a [duration value](/docs/conventions#durations) that sets the maximum time to wait for the DNS TXT records to appear when using the DNS challenge. Set to `-1` to disable propagation checks. Default 2 minutes.
 

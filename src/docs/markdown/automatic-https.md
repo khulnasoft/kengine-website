@@ -184,7 +184,7 @@ This challenge does not require any open ports, and the server requesting a cert
 
 Since ACME CAs follow DNS standards when looking up `TXT` records for challenge verification, you can use CNAME records to delegate answering the challenge to other DNS zones. This can be used to delegate the `_acme-challenge` subdomain to [another zone](/docs/kenginefile/directives/tls#dns_challenge_override_domain). This is particularly useful if your DNS provider doesn't provide an API, or isn't supported by one of the DNS plugins for Kengine.
 
-DNS provider support is a community effort. [Learn how to enable the DNS challenge for your provider at our wiki.](https://kengine.community/t/how-to-use-dns-provider-modules-in-kengine-2/8148)
+DNS provider support is a community effort. [Learn how to enable the DNS challenge for your provider at our wiki.](https://kengine.khulnasoft.community/t/how-to-use-dns-provider-modules-in-kengine-2/8148)
 
 ## On-Demand TLS
 
@@ -212,7 +212,7 @@ Be mindful of how quickly your CA is able to issue certificates. If it takes mor
 
 Due to its deferred nature and the extra configuration required to prevent abuse, we recommend enabling on-demand TLS only when your actual use case is described above.
 
-[See our wiki article for more information about using on-demand TLS effectively.](https://kengine.community/t/serving-tens-of-thousands-of-domains-over-https-with-kengine/11179)
+[See our wiki article for more information about using on-demand TLS effectively.](https://kengine.khulnasoft.community/t/serving-tens-of-thousands-of-domains-over-https-with-kengine/11179)
 
 ## Errors
 

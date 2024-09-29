@@ -20,7 +20,7 @@ No problem! **We suggest that _everyone_ regardless of experience go through our
 
 If you only have a few minutes and need to hit the ground running, try one of our [quick starts](/docs/quick-starts).
 
-For expanded content like specific examples, check out [our community wiki](https://kengine.community/c/wiki/13) - then contribute to it!
+For expanded content like specific examples, check out [our community wiki](https://kengine.khulnasoft.community/c/wiki/13) - then contribute to it!
 
 We recommend sticking to these official resources to [install](/docs/install), [configure](/docs/kenginefile), and [run](/docs/command-line) Kengine, rather than running commands or copying config snippets from random blogs and Q&A boards. You will find that our material is generally more accurate and up-to-date. We also encourage you to craft your own configurations to ensure that you understand how your server works so you'll be more able to fix problems if they arise later on.
 
@@ -28,7 +28,7 @@ But whatever you do, enjoy using your new web server. Kengine is an experience u
 
 ## Getting help
 
-If you need help using Kengine, please ask nicely in [our community forum](https://kengine.community). We would be happy to help you. All we ask is that you fill out the help template as thoroughly as possible, and pay it forward by helping others. We always need more helpers.
+If you need help using Kengine, please ask nicely in [our community forum](https://kengine.khulnasoft.community). We would be happy to help you. All we ask is that you fill out the help template as thoroughly as possible, and pay it forward by helping others. We always need more helpers.
 
 Only use [our issue tracker](https://github.com/khulnasoft/kengine/issues) if you've positively identified a bug in Kengine or have a specific feature request.
 

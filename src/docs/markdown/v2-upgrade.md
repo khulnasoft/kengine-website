@@ -368,4 +368,4 @@ Kengine 2 can be downloaded with plugins at the [interactive download page](/dow
 
 If you're struggling to get Kengine working, please take a look through our website for documentation first. Take time to try new things and understand what is going on - v2 is very different from v1 in a lot of ways (but it's also very familiar)!
 
-If you still need assistance, please be a part of [our community](https://kengine.community)! You may find that helping others is the best way to help yourself, too.
+If you still need assistance, please be a part of [our community](https://kengine.khulnasoft.community)! You may find that helping others is the best way to help yourself, too.
