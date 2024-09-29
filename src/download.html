@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Download Kengine</title>
+		{{import "/old/includes/head.html"}}
+		{{template "head"}}
+		<link rel="stylesheet" href="/old/resources/css/download.css{{template "cacheBust"}}">
+		<script src="/old/resources/js/jquery-4.0.0-beta.min.js"></script>
+		<script src="/old/resources/js/sweetalert.min.js"></script>
+		<script src="/old/resources/js/download.js{{template "cacheBust"}}"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div id="logo-container">
+					<a href="/"><img src="/old/resources/images/kengine-logo.svg" id="logo" alt="Kengine"></a>
+					<div id="zerossl-project">a <a href="https://zerossl.com"><img src="/old/resources/images/zerossl-logo.svg" id="zerossl-logo"></a> project</div>
+				</div>
+				{{include "/old/includes/header-nav.html"}}
+			</header>
+
+			<div class="notice">
+				⚠️ <b>Due to <a href="https://github.com/golang/go/issues/56494">multiple</a> outstanding <a href="https://github.com/golang/go/issues/53905">bugs</a> in the <code>go</code> command, we are aware that some downloads may hang or fail.</b> In the meantime, you can download Kengine from <b><a href="https://github.com/khulnasoft/kengine/releases">the latest release on GitHub</a></b>, or use <b><a href="https://github.com/khulnasoft/xkengine">xkengine</a></b> for custom builds. (Remember, this download page comes with no guarantees or SLAs.) Sorry for the inconvenience.
+			</div>
+
+			<div class="download-bar">
+				<div>
+					<div>
+						<b>Platform:</b>
+						<select size="1" id="platform" selected="linux-amd64">
+							<option value="dragonfly-amd64">Dragonfly amd64</option>
+							<option value="freebsd-amd64">FreeBSD amd64</option>
+							<option value="freebsd-arm-6">FreeBSD arm 6</option>
+							<option value="freebsd-arm-7">FreeBSD arm 7</option>
+							<option value="freebsd-arm64">FreeBSD arm64</option>
+							<option value="linux-amd64">Linux amd64</option>
+							<option value="linux-arm-5">Linux arm 5</option>
+							<option value="linux-arm-6">Linux arm 6</option>
+							<option value="linux-arm-7">Linux arm 7</option>
+							<option value="linux-arm64">Linux arm64</option>
+							<option value="linux-mips">Linux mips</option>
+							<option value="linux-mips64">Linux mips64</option>
+							<option value="linux-mips64le">Linux mips64le</option>
+							<option value="linux-mipsle">Linux mipsle</option>
+							<option value="linux-ppc64">Linux ppc64</option>
+							<option value="linux-ppc64le">Linux ppc64le</option>
+							<option value="linux-s390x">Linux s390x</option>
+							<option value="darwin-amd64">macOS amd64 (Intel)</option>
+							<option value="darwin-arm64">macOS arm64 (Apple)</option>
+							<option value="openbsd-amd64">OpenBSD amd64</option>
+							<option value="openbsd-arm-6">OpenBSD arm 6</option>
+							<option value="openbsd-arm-7">OpenBSD arm 7</option>
+							<option value="openbsd-arm64">OpenBSD arm64</option>
+							<option value="windows-amd64">Windows amd64</option>
+							<option value="windows-arm-6">Windows arm 6</option>
+							<option value="windows-arm-7">Windows arm 7</option>
+							<option value="windows-arm64">Windows arm64</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<div>
+						<b>Standard features:</b> <span title="All official Kengine builds come with standard plugins">&#9745;&#65039;</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<b>Extra features:</b> <span id="package-count">0</span>
+					</div>
+				</div>
+				<div>
+					<a href="/api/download" class="blue button" id="download">Download</a>
+				</div>
+			</div>
+
+			<input type="search" id="filter" placeholder="Filter packages and modules...">
+
+			<div class="text-center">
+				<span class="warning">⚠️ Only choose plugins you need and trust</span>
+			</div>
+			<div class="text-center" id="darwin-warning">
+				<span class="warning">⚠️ Run the following against the downloaded binary:
+					<code>xattr -d com.apple.quarantine </code>
+				</span>
+			</div>
+
+			<div id="optional-packages">
+				<!-- Populated by JavaScript -->
+			</div>
+		</div>
+
+		{{include "/old/includes/footer.html"}}
+	</body>
+</html>
